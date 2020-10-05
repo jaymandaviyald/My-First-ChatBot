@@ -41,9 +41,12 @@ def test():
     print("4. To interrupt the execution of a program.")
     print('Completed, have a nice day!')
     ans=int(input())
-    while(ans==2) :
+    while(ans!=2) :
         if ans!= 2 :
             print("Please, try again.")
+            ans = int(input())
+            if ans == 2:
+                break
         else :
             print("Completed, have a nice day!")
 
